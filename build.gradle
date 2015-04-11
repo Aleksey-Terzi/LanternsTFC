@@ -16,7 +16,7 @@ buildscript {
 }
 
 configurations {
-  runtime.exclude group: "[1.7.10]TerraFirmaCraft-0.79.12.427"
+  runtime.exclude group: "[1.7.10]TerraFirmaCraft-0.79.17.645"
 }
 
 // define the properties file
@@ -54,17 +54,17 @@ sourceSets {
    }
  }
  
-//task copyJar(type: Copy) {
-//     from('build/libs') {
-//		include '**/*.jar'
-//	 }
-//     into 'C:/Users/Aleksey/AppData/Roaming/.minecraft_tfc/mods'
-// }
+task copyJar(type: Copy) {
+     from('build/libs') {
+		include '**/*.jar'
+	 }
+     into 'C:/Users/Aleksey/AppData/Roaming/.minecraft_tfc/mods'
+ }
  
-//tasks.build.dependsOn('copyJar')
+tasks.build.dependsOn('copyJar')
 
 dependencies {
-    // Copy "[1.7.10]TerraFirmaCraft-0.79.12.427" file
+    // Copy "[1.7.10]TerraFirmaCraft-0.79.17.645" file
 	// into the ./libs directory
 }
 

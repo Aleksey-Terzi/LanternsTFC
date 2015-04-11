@@ -20,7 +20,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="LanternsTFC", name="Lanterns", version="1.0.42", dependencies="after:TerraFirmaCraft")
+@Mod(modid="LanternsTFC", name="Lanterns", version="1.0.43", dependencies="after:TerraFirmaCraft")
 public class LanternsMod
 {
     @Instance("LanternsTFC")

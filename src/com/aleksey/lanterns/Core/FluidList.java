@@ -1,8 +1,8 @@
 package com.aleksey.lanterns.Core;
 
-import com.bioxx.tfc.Core.TFCFluid;
-
 import net.minecraftforge.fluids.Fluid;
+
+import com.bioxx.tfc.api.TFCFluids;
 
 public class FluidList
 {
@@ -12,14 +12,14 @@ public class FluidList
     {
         AlcoholFluids = new Fluid[]
         {
-            TFCFluid.RUM,
-            TFCFluid.BEER,
-            TFCFluid.RYEWHISKEY,
-            TFCFluid.WHISKEY,
-            TFCFluid.CORNWHISKEY,
-            TFCFluid.SAKE,
-            TFCFluid.VODKA,
-            TFCFluid.CIDER
+            TFCFluids.RUM,
+            TFCFluids.BEER,
+            TFCFluids.RYEWHISKEY,
+            TFCFluids.WHISKEY,
+            TFCFluids.CORNWHISKEY,
+            TFCFluids.SAKE,
+            TFCFluids.VODKA,
+            TFCFluids.CIDER
         };
     }
 }

@@ -8,11 +8,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidStack;
 
-import com.bioxx.tfc.TFCItems;
+import com.bioxx.tfc.api.TFCItems;
 import com.bioxx.tfc.api.Constant.Global;
 import com.bioxx.tfc.api.Crafting.AnvilManager;
 import com.bioxx.tfc.api.Crafting.AnvilRecipe;
-import com.bioxx.tfc.api.Crafting.AnvilReq;
 import com.bioxx.tfc.api.Crafting.PlanRecipe;
 import com.bioxx.tfc.api.Enums.RuleEnum;
 
@@ -47,7 +46,7 @@ public class Recipes
             Item sheetItem = GameRegistry.findItem("terrafirmacraft", info.SheetName);            
             ItemStack lanternShell = new ItemStack(ItemList.LanternShells[i], 1, 0);
 
-            manager.addRecipe(new AnvilRecipe(new ItemStack(sheetItem), null, "lanternshell", false, info.Anvil, lanternShell).addRecipeSkill(Global.SKILL_GENERAL_SMITHING));
+            manager.addRecipe(new AnvilRecipe(new ItemStack(sheetItem), null, LanternShellPlan, false, info.Anvil, lanternShell).addRecipeSkill(Global.SKILL_GENERAL_SMITHING));
         }
     }
     
